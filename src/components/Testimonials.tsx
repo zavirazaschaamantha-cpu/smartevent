@@ -4,24 +4,24 @@ import { Star } from 'lucide-react';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah Jenkins',
-      role: 'Student Council President',
-      image: 'https://i.pravatar.cc/150?u=sarah',
-      content: 'SmartEvent changed everything for our campus summits. We used to struggle with check-ins, but now it only takes seconds with the QR scanner.',
+      name: 'Siti Aminah',
+      role: 'Ketua BEM Kampus',
+      image: 'https://i.pravatar.cc/150?u=siti',
+      content: 'SmartEvent mengubah segalanya untuk rangkaian acara puncak kami. Dulu kami kesulitan dengan check-in, tapi sekarang hanya butuh hitungan detik dengan pemindai QR.',
       rating: 5,
     },
     {
-      name: 'Dr. Michael Chen',
-      role: 'Dean of Students',
-      image: 'https://i.pravatar.cc/150?u=michael',
-      content: 'The analytics provide us with invaluable data about student engagement. It’s professional, reliable, and extremely easy to use.',
+      name: 'Dr. Budi Santoso',
+      role: 'Dosen Pembimbing Kemahasiswaan',
+      image: 'https://i.pravatar.cc/150?u=budi',
+      content: 'Analitik yang diberikan memberi kami data tak ternilai tentang partisipasi mahasiswa. Profesional, handal, dan sangat mudah digunakan.',
       rating: 5,
     },
     {
-      name: 'Alex Rivera',
-      role: 'Hackathon Coordinator',
-      image: 'https://i.pravatar.cc/150?u=alex',
-      content: 'Managing 200+ registrations was a breeze. I especially love the real-time dashboard tracking participants as they arrive.',
+      name: 'Ahmad Fauzi',
+      role: 'Koordinator IT Fest',
+      image: 'https://i.pravatar.cc/150?u=ahmad',
+      content: 'Mengelola 200+ pendaftaran menjadi sangat mudah. Saya sangat menyukai dasbor waktu nyata yang melacak peserta saat mereka tiba.',
       rating: 5,
     },
   ];
@@ -30,8 +30,8 @@ export default function Testimonials() {
     <section className="py-24 bg-white relative">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold text-brand-purple uppercase tracking-widest mb-3">User Reviews</h2>
-          <h3 className="text-4xl font-display font-extrabold text-gray-900">What Organizers Say</h3>
+          <h2 className="text-sm font-bold text-brand-purple uppercase tracking-widest mb-3">Ulasan Pengguna</h2>
+          <h3 className="text-4xl font-display font-extrabold text-gray-900">Apa Kata Panitia</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -21,20 +21,20 @@ export default function Hero() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-purple-50 text-brand-purple text-xs font-bold rounded-full w-fit border border-purple-100 uppercase tracking-widest mb-6 mx-auto lg:mx-0">
                 <span className="flex h-2 w-2 rounded-full bg-brand-purple" />
-                The #1 Campus Tool
+                Solusi Kampus #1
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-gray-900 tracking-tight leading-[1.1] mb-6">
-                Manage Campus Events <span className="text-brand-purple">Smarter.</span>
+                Kelola Acara Kampus <span className="text-brand-purple">Lebih Cerdas.</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-500 leading-relaxed max-w-2xl mb-10 mx-auto lg:mx-0">
-                The all-in-one platform for student organizations to host seamless seminars, workshops, and social gatherings with real-time tracking.
+                Platform all-in-one bagi organisasi mahasiswa untuk menyelenggarakan seminar, workshop, dan kegiatan sosial tanpa hambatan dengan pelacakan waktu nyata.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <Button variant="primary" className="bg-gray-900 text-white hover:bg-black rounded-2xl px-10 py-5">
-                  Start Free <ArrowRight size={18} />
+                  Mulai Gratis <ArrowRight size={18} />
                 </Button>
                 <Button variant="glass" className="bg-white border border-gray-200 text-gray-900 rounded-2xl px-10 py-5 hover:bg-gray-50">
-                  Watch Demo
+                  Tonton Demo
                 </Button>
               </div>
 
@@ -44,7 +44,7 @@ export default function Hero() {
                   <div className="w-10 h-10 rounded-full border-2 border-white bg-brand-purple"></div>
                   <div className="w-10 h-10 rounded-full border-2 border-white bg-brand-orange"></div>
                 </div>
-                <p className="text-sm text-gray-500">Join <span className="font-bold text-gray-900">1,200+</span> student clubs</p>
+                <p className="text-sm text-gray-500">Gabung dengan <span className="font-bold text-gray-900">1.200+</span> organisasi mahasiswa</p>
               </div>
             </motion.div>
           </div>
@@ -97,8 +97,8 @@ export default function Hero() {
                  <CheckCircle2 size={24} />
               </div>
               <div>
-                <p className="text-sm font-bold">Success!</p>
-                <p className="text-xs opacity-80">Registration confirmed</p>
+                <p className="text-sm font-bold">Berhasil!</p>
+                <p className="text-xs opacity-80">Registrasi dikonfirmasi</p>
               </div>
             </motion.div>
           </div>

@@ -12,43 +12,43 @@ import {
 export default function Features() {
   const features = [
     {
-      title: 'Event Registration System',
-      description: 'Fully customizable forms for participants with automated confirmation emails.',
+      title: 'Sistem Registrasi Acara',
+      description: 'Formulir yang dapat disesuaikan sepenuhnya dengan email konfirmasi otomatis.',
       icon: ClipboardList,
       color: 'bg-brand-purple',
       link: '#',
     },
     {
-      title: 'Digital Ticket QR',
-      description: 'Secure, unique QR codes for every participant to ensure fast check-in.',
+      title: 'Tiket QR Digital',
+      description: 'Kode QR unik dan aman untuk setiap peserta guna memastikan check-in cepat.',
       icon: Ticket,
       color: 'bg-brand-orange',
       link: '#',
     },
     {
-      title: 'Attendance Scanner',
-      description: 'Mobile-first scanning app for staff to track entries in real-time.',
+      title: 'Pemindai Kehadiran',
+      description: 'Aplikasi pemindaian mobile-first untuk staf guna melacak peserta secara real-time.',
       icon: ScanLine,
       color: 'bg-brand-peach',
       link: '#',
     },
     {
-      title: 'Real-Time Dashboard',
-      description: 'Monitor your event health, ticket sales, and check-ins as they happen.',
+      title: 'Dasbor Waktu Nyata',
+      description: 'Pantau kesehatan acara Anda, penjualan tiket, dan check-in secara langsung.',
       icon: LayoutDashboard,
       color: 'bg-brand-purple',
       link: '#',
     },
     {
-      title: 'Reports & Analytics',
-      description: 'Deep dive into participant demographics and event performance metrics.',
+      title: 'Laporan & Analitik',
+      description: 'Analisis mendalam tentang demografi peserta dan metrik performa acara.',
       icon: PieChart,
       color: 'bg-brand-orange',
       link: '#',
     },
     {
-      title: 'Cloud Storage',
-      description: 'Securely store attendee data, event assets, and documents in one place.',
+      title: 'Penyimpanan Cloud',
+      description: 'Simpan data peserta dan aset acara dengan aman di satu tempat terpusat.',
       icon: Cloud,
       color: 'bg-brand-peach',
       link: '#',
@@ -64,13 +64,13 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-sm font-bold text-brand-purple uppercase tracking-widest mb-3">Core Features</h2>
+            <h2 className="text-sm font-bold text-brand-purple uppercase tracking-widest mb-3">Fitur Utama</h2>
             <h3 className="text-4xl md:text-5xl font-display font-extrabold text-gray-900 mb-6">
-              Everything you need for <br className="hidden md:block" />
-              <span className="gradient-text">High-Impact</span> Events
+              Semua yang Anda butuhkan untuk <br className="hidden md:block" />
+              Acara Berdampak <span className="gradient-text">Tinggi</span>
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Built by students, for students. Powerful tools that handle the heavy lifting so you can focus on creating memorable experiences.
+            <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+              Dibuat oleh mahasiswa, untuk mahasiswa. Alat canggih yang menangani pekerjaan berat sehingga Anda dapat fokus menciptakan pengalaman berkesan.
             </p>
           </motion.div>
         </div>
@@ -94,7 +94,7 @@ export default function Features() {
                 {feature.description}
               </p>
               <a href={feature.link} className="inline-flex items-center gap-2 text-sm font-bold text-brand-purple hover:gap-3 transition-all">
-                Explore Feature <ChevronRight size={18} />
+                Jelajahi Fitur <ChevronRight size={18} />
               </a>
             </motion.div>
           ))}

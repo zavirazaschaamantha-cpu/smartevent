@@ -28,20 +28,20 @@ export default function LoginPage() {
         </div>
         
         <div className="relative z-10 text-white max-w-lg">
-          <h2 className="text-5xl font-display font-black mb-8 leading-[1.1] tracking-tight">Welcome back to SmartEvent.</h2>
+          <h2 className="text-5xl font-display font-black mb-8 leading-[1.1] tracking-tight">Selamat datang kembali.</h2>
           <p className="text-white/80 text-xl leading-relaxed mb-12 font-medium">
-            Log in to manage your campus events, track participants, and access your high-impact reports.
+            Masuk untuk mengelola acara kampus Anda, melacak peserta, dan mengakses laporan berdampak tinggi Anda.
           </p>
           
           <div className="glass-dark p-8 rounded-[2rem] border-white/20 shadow-2xl">
             <div className="flex items-center gap-4 mb-6">
               <img src="https://i.pravatar.cc/150?u=sarah" alt="sarah" className="w-14 h-14 rounded-full border-2 border-white/20 shadow-lg" referrerPolicy="no-referrer" />
               <div>
-                <div className="font-bold text-lg leading-tight">Sarah Jenkins</div>
-                <div className="text-xs text-white/60 font-bold uppercase tracking-widest mt-1">Student Leader, UCLA</div>
+                <div className="font-bold text-lg leading-tight">Siti Aminah</div>
+                <div className="text-xs text-white/60 font-bold uppercase tracking-widest mt-1">Pemimpin Mahasiswa, UI</div>
               </div>
             </div>
-            <p className="text-sm italic text-white/90 leading-relaxed font-medium">"The fastest way to manage events on campus. I can't imagine going back to spreadsheets. It's a game changer."</p>
+            <p className="text-sm italic text-white/90 leading-relaxed font-medium">"Cara tercepat untuk mengelola acara di kampus. Saya tidak bisa membayangkan kembali ke lembar sebar (spreadsheets). Ini adalah perubahan besar."</p>
           </div>
         </div>
       </motion.div>
@@ -49,7 +49,7 @@ export default function LoginPage() {
       {/* Right side: Form */}
       <div className="flex-1 flex flex-col p-8 md:p-16 lg:p-24 justify-center relative">
         <Link to="/" className="absolute top-8 left-8 flex items-center gap-2 text-gray-500 hover:text-brand-purple transition-all font-bold text-sm">
-          <ArrowLeft size={18} /> Back to home
+          <ArrowLeft size={18} /> Kembali ke beranda
         </Link>
 
         <div className="max-w-md mx-auto w-full">
@@ -60,17 +60,17 @@ export default function LoginPage() {
             <span className="text-2xl font-display font-bold text-gray-900">SmartEvent.</span>
           </div>
 
-          <h1 className="text-3xl font-display font-bold text-gray-900 mb-2">Login</h1>
-          <p className="text-gray-500 mb-10">Enter your credentials to access your account</p>
+          <h1 className="text-3xl font-display font-bold text-gray-900 mb-2">Masuk</h1>
+          <p className="text-gray-500 mb-10">Masukkan kredensial Anda untuk mengakses akun</p>
 
           <form onSubmit={handleLogin} className="space-y-6">
             <div>
-              <label className="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+              <label className="block text-sm font-bold text-gray-700 mb-2">Alamat Email</label>
               <div className="relative">
                 <input 
                   type="email" 
                   required
-                  placeholder="name@university.edu"
+                  placeholder="nama@universitas.ac.id"
                   className="w-full px-4 py-3 pl-12 rounded-xl bg-gray-50 border border-gray-100 focus:bg-white focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 outline-none transition-all" 
                 />
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
@@ -79,8 +79,8 @@ export default function LoginPage() {
 
             <div>
               <div className="flex items-center justify-between mb-2">
-                <label className="block text-sm font-bold text-gray-700">Password</label>
-                <a href="#" className="text-xs font-bold text-brand-purple hover:underline">Forgot password?</a>
+                <label className="block text-sm font-bold text-gray-700">Kata Sandi</label>
+                <a href="#" className="text-xs font-bold text-brand-purple hover:underline">Lupa kata sandi?</a>
               </div>
               <div className="relative">
                 <input 
@@ -95,11 +95,11 @@ export default function LoginPage() {
 
             <div className="flex items-center gap-3">
               <input type="checkbox" id="remember" className="w-4 h-4 accent-brand-purple" />
-              <label htmlFor="remember" className="text-sm font-medium text-gray-600">Remember me for 30 days</label>
+              <label htmlFor="remember" className="text-sm font-medium text-gray-600">Ingat saya selama 30 hari</label>
             </div>
 
             <Button variant="primary" className="w-full">
-              Sign In
+              Masuk
             </Button>
           </form>
 
@@ -108,18 +108,18 @@ export default function LoginPage() {
               <div className="w-full border-t border-gray-100"></div>
             </div>
             <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-white px-4 text-gray-400 font-bold tracking-widest">Or continue with</span>
+              <span className="bg-white px-4 text-gray-400 font-bold tracking-widest">Atau lanjut dengan</span>
             </div>
           </div>
 
           <div className="mt-8">
             <button className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-xl border border-gray-200 hover:bg-gray-50 transition-all font-bold text-sm text-gray-700">
-              <Chrome size={18} className="text-brand-orange" /> Sign in with Google
+              <Chrome size={18} className="text-brand-orange" /> Masuk dengan Google
             </button>
           </div>
 
           <p className="mt-10 text-center text-sm text-gray-500 font-medium">
-            Don't have an account? <Link to="/register" className="text-brand-purple font-bold hover:underline">Sign up for free</Link>
+            Belum punya akun? <Link to="/register" className="text-brand-purple font-bold hover:underline">Daftar gratis</Link>
           </p>
         </div>
       </div>

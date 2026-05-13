@@ -18,17 +18,17 @@ export function CTA() {
           
           <div className="relative z-10 max-w-2xl mx-auto text-white">
             <h2 className="text-4xl md:text-5xl font-display font-extrabold mb-8 leading-tight">
-              Start Managing Events More Efficiently Today
+              Mulai Kelola Acara Lebih Efisien Hari Ini
             </h2>
             <p className="text-white/80 text-lg mb-10">
-              Join 5,000+ campus organizers who have transformed how they organize events. Try SmartEvent for free.
+              Bergabunglah dengan 5.000+ panitia kampus yang telah mentransformasi cara mereka mengelola acara. Coba SmartEvent gratis.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="glass" className="bg-white text-brand-purple hover:bg-white/90">
-                Try Free Now <ArrowRight size={18} />
+                Coba Gratis Sekarang <ArrowRight size={18} />
               </Button>
               <Button variant="glass" className="bg-transparent border border-white text-white hover:bg-white/10">
-                Contact Us
+                Hubungi Kami
               </Button>
             </div>
           </div>
@@ -54,7 +54,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-8">
-              The premier platform for university student organizations to manage seminars, workshops, and high-impact events with ease.
+              Platform terkemuka bagi organisasi mahasiswa universitas untuk mengelola seminar, workshop, dan acara berdampak tinggi dengan mudah.
             </p>
             <div className="flex items-center gap-4">
               {[Twitter, Github, Linkedin, Mail].map((Icon, i) => (
@@ -67,9 +67,9 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-6">Product</h4>
+            <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-6">Produk</h4>
             <ul className="space-y-4">
-              {['Features', 'Dashboard', 'Pricing', 'API', 'Releases'].map((link) => (
+              {['Fitur', 'Dasbor', 'Harga', 'API', 'Rilis'].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-sm text-gray-500 hover:text-brand-purple transition-colors">{link}</a>
                 </li>
@@ -78,9 +78,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-6">Company</h4>
+            <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-6">Perusahaan</h4>
             <ul className="space-y-4">
-              {['About Us', 'Our Story', 'Team', 'Blog', 'Contact'].map((link) => (
+              {['Tentang Kami', 'Cerita Kami', 'Tim', 'Blog', 'Kontak'].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-sm text-gray-500 hover:text-brand-purple transition-colors">{link}</a>
                 </li>
@@ -91,7 +91,7 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-6">Legal</h4>
             <ul className="space-y-4">
-              {['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'Accessibility'].map((link) => (
+              {['Kebijakan Privasi', 'Ketentuan Layanan', 'Kebijakan Cookie', 'Aksesibilitas'].map((link) => (
                 <li key={link}>
                   <a href="#" className="text-sm text-gray-500 hover:text-brand-purple transition-colors">{link}</a>
                 </li>
@@ -101,10 +101,10 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-sm text-gray-400">© 2026 SmartEvent Planner. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© 2026 SmartEvent Planner. Seluruh hak cipta dilindungi.</p>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500" />
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">All Systems Operational</span>
+            <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">Semua Sistem Beroperasi</span>
           </div>
         </div>
       </div>

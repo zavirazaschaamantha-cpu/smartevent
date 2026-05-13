@@ -1,6 +1,6 @@
 {
   "name": "SmartEvent Planner",
-  "description": "A premium SaaS platform for managing campus events, seminars, and workshops for students and organizations.",
+  "description": "Platform SaaS premium untuk mengelola acara kampus, seminar, dan workshop bagi mahasiswa dan organisasi.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

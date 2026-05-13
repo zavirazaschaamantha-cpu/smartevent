@@ -7,20 +7,20 @@ export default function FAQ() {
 
   const faqs = [
     {
-      q: 'Is SmartEvent free for small student clubs?',
-      a: 'Yes! We have a permanent Free Plan that allows up to 50 participants per event, which is perfect for smaller club meetups.'
+      q: 'Apakah SmartEvent gratis untuk organisasi mahasiswa kecil?',
+      a: 'Ya! Kami memiliki Paket Gratis permanen yang mengizinkan hingga 50 peserta per acara, yang sangat cocok untuk pertemuan klub kecil.'
     },
     {
-      q: 'Do participants need to download an app?',
-      a: 'No. Participants can register and receive their tickets via email. They only need to show their QR code (digital or printed) at check-in.'
+      q: 'Apakah peserta perlu mengunduh aplikasi?',
+      a: 'Tidak. Peserta dapat mendaftar dan menerima tiket melalui email. Mereka hanya perlu menunjukkan kode QR (digital atau cetak) saat check-in.'
     },
     {
-      q: 'Can I export participant data to Excel?',
-      a: 'Absolutely. All plans (including Free) allow you to export your attendee list and basic reports in CSV format.'
+      q: 'Dapatkah saya mengekspor data peserta ke Excel?',
+      a: 'Tentu saja. Semua paket (termasuk Paket Gratis) memungkinkan Anda mengekspor daftar hadir dan laporan dasar dalam format CSV.'
     },
     {
-      q: 'Is the attendance scanner app compatible with all phones?',
-      a: 'Our scanner works directly in the mobile browser of any modern smartphone. No app store download required.'
+      q: 'Apakah aplikasi pemindai kehadiran kompatibel dengan semua ponsel?',
+      a: 'Pemindai kami bekerja langsung di browser seluler ponsel pintar modern apa pun. Tidak perlu mengunduh dari app store.'
     }
   ];
 
@@ -31,7 +31,7 @@ export default function FAQ() {
           <div className="inline-flex p-3 bg-brand-purple/10 text-brand-purple rounded-2xl mb-4">
             <HelpCircle size={24} />
           </div>
-          <h3 className="text-3xl font-display font-extrabold text-gray-900">Frequently Asked Questions</h3>
+          <h3 className="text-3xl font-display font-extrabold text-gray-900">Pertanyaan yang Sering Diajukan</h3>
         </div>
 
         <div className="space-y-4">

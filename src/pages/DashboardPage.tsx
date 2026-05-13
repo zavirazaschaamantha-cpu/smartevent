@@ -44,17 +44,17 @@ export default function DashboardPage() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const stats = [
-    { label: 'Total Events', value: '42', icon: Calendar, color: 'text-brand-purple', bg: 'bg-brand-purple/10' },
-    { label: 'Participants', value: '12,480', icon: Users, color: 'text-brand-orange', bg: 'bg-brand-orange/10' },
-    { label: 'Revenue', value: '$8,420', icon: BarChart3, color: 'text-green-500', bg: 'bg-green-500/10' },
-    { label: 'Attendance Rate', value: '94.2%', icon: CheckCircle2, color: 'text-brand-peach', bg: 'bg-brand-peach/10' },
+    { label: 'Total Acara', value: '42', icon: Calendar, color: 'text-brand-purple', bg: 'bg-brand-purple/10' },
+    { label: 'Peserta', value: '12.480', icon: Users, color: 'text-brand-orange', bg: 'bg-brand-orange/10' },
+    { label: 'Pendapatan', value: 'Rp 8.420k', icon: BarChart3, color: 'text-green-500', bg: 'bg-green-500/10' },
+    { label: 'Tingkat Kehadiran', value: '94.2%', icon: CheckCircle2, color: 'text-brand-peach', bg: 'bg-brand-peach/10' },
   ];
 
   const recentEvents = [
-    { name: 'Tech Startup Summit 2026', date: 'May 20, 2026', status: 'Upcoming', participants: 450, rsvp: '82%' },
-    { name: 'Annual Sports Day', date: 'May 25, 2026', status: 'Draft', participants: 0, rsvp: '0%' },
-    { name: 'AI Workshop Series', date: 'May 12, 2026', status: 'Completed', participants: 120, rsvp: '100%' },
-    { name: 'Career Fair Spring', date: 'June 05, 2026', status: 'Upcoming', participants: 800, rsvp: '45%' },
+    { name: 'Tech Startup Summit 2026', date: '20 Mei 2026', status: 'Mendatang', participants: 450, rsvp: '82%' },
+    { name: 'Hari Olahraga Tahunan', date: '25 Mei 2026', status: 'Draf', participants: 0, rsvp: '0%' },
+    { name: 'Seri Workshop AI', date: '12 Mei 2026', status: 'Selesai', participants: 120, rsvp: '100%' },
+    { name: 'Career Fair Musim Semi', date: '05 Juni 2026', status: 'Mendatang', participants: 800, rsvp: '45%' },
   ];
 
   return (
@@ -76,10 +76,10 @@ export default function DashboardPage() {
           <nav className="space-y-1">
             {[
               { icon: LayoutDashboard, label: 'Dashboard', active: true },
-              { icon: Calendar, label: 'My Events' },
-              { icon: Users, label: 'Participants' },
-              { icon: BarChart3, label: 'Analytics' },
-              { icon: Settings, label: 'Settings' },
+              { icon: Calendar, label: 'Acara Saya' },
+              { icon: Users, label: 'Peserta' },
+              { icon: BarChart3, label: 'Analitik' },
+              { icon: Settings, label: 'Pengaturan' },
             ].map((item, i) => (
               <button 
                 key={i}
@@ -99,7 +99,7 @@ export default function DashboardPage() {
         <div className="mt-auto p-6 border-t border-gray-50">
           <Link to="/login" className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-500 hover:bg-red-50 transition-all font-bold text-sm">
             <LogOut size={20} />
-            Logout
+            Keluar
           </Link>
         </div>
       </motion.aside>
@@ -116,8 +116,8 @@ export default function DashboardPage() {
               <Menu size={24} />
             </button>
             <div>
-              <h1 className="text-xl font-display font-bold text-gray-900">Overview</h1>
-              <p className="text-xs text-gray-500 font-medium">Wednesday, 13 May 2026</p>
+              <h1 className="text-xl font-display font-bold text-gray-900">Ringkasan</h1>
+              <p className="text-xs text-gray-500 font-medium">Rabu, 13 Mei 2026</p>
             </div>
           </div>
 
@@ -126,7 +126,7 @@ export default function DashboardPage() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
               <input 
                 type="text" 
-                placeholder="Search events..." 
+                placeholder="Cari acara..." 
                 className="bg-gray-50 border border-gray-100 rounded-xl px-4 py-2 pl-10 text-sm focus:bg-white focus:ring-4 focus:ring-brand-purple/5 outline-none transition-all w-64"
               />
             </div>
@@ -136,7 +136,7 @@ export default function DashboardPage() {
             </button>
             <div className="flex items-center gap-3 pl-4 border-l border-gray-100">
               <div className="text-right hidden sm:block">
-                <div className="text-sm font-bold text-gray-900 leading-none">Sarah Jenkins</div>
+                <div className="text-sm font-bold text-gray-900 leading-none">Siti Aminah</div>
                 <div className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mt-1">Administrator</div>
               </div>
               <img 
@@ -153,11 +153,11 @@ export default function DashboardPage() {
           {/* Welcome Section */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
             <div>
-              <h2 className="text-3xl font-display font-extrabold text-gray-900 mb-2">Good morning, Sarah! 👋</h2>
-              <p className="text-gray-500 font-medium">You have 2 events starting this week. Let's make them great!</p>
+              <h2 className="text-3xl font-display font-extrabold text-gray-900 mb-2">Selamat pagi, Siti! 👋</h2>
+              <p className="text-gray-500 font-medium">Anda memiliki 2 acara yang dimulai minggu ini. Ayo jadikan luar biasa!</p>
             </div>
             <button className="bg-brand-purple text-white px-6 py-3 rounded-2xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-brand-purple/20 hover:scale-105 active:scale-95 transition-all">
-              <Plus size={20} /> Create New Event
+              <Plus size={20} /> Buat Acara Baru
             </button>
           </div>
 
@@ -190,10 +190,10 @@ export default function DashboardPage() {
             <div className="lg:col-span-2 space-y-8">
               <div className="bg-white p-8 rounded-3xl border border-gray-100 soft-shadow">
                 <div className="flex items-center justify-between mb-8">
-                  <h3 className="text-xl font-display font-bold text-gray-900">Registration Growth</h3>
+                  <h3 className="text-xl font-display font-bold text-gray-900">Pertumbuhan Registrasi</h3>
                   <div className="flex gap-2">
-                    <button className="px-3 py-1 bg-gray-50 rounded-lg text-xs font-bold text-brand-purple">Weekly</button>
-                    <button className="px-3 py-1 text-xs font-bold text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">Monthly</button>
+                    <button className="px-3 py-1 bg-gray-50 rounded-lg text-xs font-bold text-brand-purple">Mingguan</button>
+                    <button className="px-3 py-1 text-xs font-bold text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">Bulanan</button>
                   </div>
                 </div>
                 <div className="h-[300px] w-full">
@@ -219,18 +219,18 @@ export default function DashboardPage() {
               {/* Recent Events Table */}
               <div className="bg-white p-8 rounded-3xl border border-gray-100 soft-shadow">
                 <div className="flex items-center justify-between mb-8">
-                  <h3 className="text-xl font-display font-bold text-gray-900">Recent Events</h3>
-                  <button className="text-brand-purple text-sm font-bold hover:underline">View All</button>
+                  <h3 className="text-xl font-display font-bold text-gray-900">Acara Terbaru</h3>
+                  <button className="text-brand-purple text-sm font-bold hover:underline">Lihat Semua</button>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
                       <tr className="border-b border-gray-50">
-                        <th className="text-left py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Event Name</th>
-                        <th className="text-left py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Date</th>
+                        <th className="text-left py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Nama Acara</th>
+                        <th className="text-left py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Tanggal</th>
                         <th className="text-left py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Status</th>
-                        <th className="text-left py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">RSVP Status</th>
-                        <th className="text-right py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Action</th>
+                        <th className="text-left py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Status RSVP</th>
+                        <th className="text-right py-4 text-xs font-bold text-gray-400 uppercase tracking-widest">Aksi</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-50">
@@ -240,8 +240,8 @@ export default function DashboardPage() {
                           <td className="py-5 text-sm text-gray-500 font-medium">{event.date}</td>
                           <td className="py-5">
                             <span className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${
-                              event.status === 'Upcoming' ? 'bg-blue-100 text-blue-600' :
-                              event.status === 'Completed' ? 'bg-green-100 text-green-600' :
+                              event.status === 'Mendatang' ? 'bg-blue-100 text-blue-600' :
+                              event.status === 'Selesai' ? 'bg-green-100 text-green-600' :
                               'bg-gray-100 text-gray-500'
                             }`}>
                               {event.status}
@@ -273,13 +273,13 @@ export default function DashboardPage() {
               {/* Mini Calendar */}
               <div className="bg-white p-6 rounded-3xl border border-gray-100 soft-shadow">
                 <h3 className="text-lg font-display font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <Calendar size={20} className="text-brand-purple" /> Timeline
+                  <Calendar size={20} className="text-brand-purple" /> Lini Masa
                 </h3>
                 <div className="space-y-6">
                   {[
-                    { title: 'Networking Night', time: 'Today, 6:00 PM', urgency: 'High' },
-                    { title: 'Committee Meeting', time: 'Tomorrow, 10:00 AM', urgency: 'Medium' },
-                    { title: 'Budget Approval', time: 'May 15, 2:00 PM', urgency: 'Medium' },
+                    { title: 'Malam Networking', time: 'Hari ini, 18:00', urgency: 'Tinggi' },
+                    { title: 'Rapat Komite', time: 'Besok, 10:00', urgency: 'Sedang' },
+                    { title: 'Persetujuan Anggaran', time: '15 Mei, 14:00', urgency: 'Sedang' },
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 group cursor-pointer">
                       <div className="flex flex-col items-center">
@@ -296,17 +296,17 @@ export default function DashboardPage() {
                   ))}
                 </div>
                 <button className="w-full py-3 bg-gray-50 text-gray-500 rounded-2xl text-sm font-bold hover:bg-brand-purple/5 hover:text-brand-purple transition-all">
-                  View Full Calendar
+                  Lihat Kalender Lengkap
                 </button>
               </div>
 
               {/* Feedback Widget */}
               <div className="bg-gradient-to-br from-brand-orange to-brand-peach p-6 rounded-3xl text-white soft-shadow relative overflow-hidden">
                 <div className="relative z-10">
-                  <h3 className="font-display font-extrabold text-xl mb-4">How are we doing?</h3>
-                  <p className="text-white/80 text-xs mb-6 leading-relaxed">Your feedback helps us make SmartEvent the best tool for campus organizers.</p>
+                  <h3 className="font-display font-extrabold text-xl mb-4">Bagaimana performa kami?</h3>
+                  <p className="text-white/80 text-xs mb-6 leading-relaxed">Umpan balik Anda membantu kami menjadikan SmartEvent alat terbaik untuk penyelenggara kampus.</p>
                   <button className="w-full py-3 bg-white text-brand-orange rounded-2xl text-sm font-bold shadow-lg shadow-black/5 hover:scale-[1.02] active:scale-[0.98] transition-all">
-                    Send Feedback
+                    Kirim Umpan Balik
                   </button>
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-white/20 rounded-full blur-2xl" />

@@ -17,9 +17,9 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Features', href: '#features' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'Beranda', href: '/' },
+    { name: 'Fitur', href: '#features' },
+    { name: 'Harga', href: '#pricing' },
     { name: 'FAQ', href: '#faq' },
   ];
 
@@ -59,13 +59,13 @@ export default function Navbar() {
             to="/login"
             className="px-5 py-2 text-sm font-semibold text-gray-700 hover:text-brand-purple transition-colors"
           >
-            Login
+            Masuk
           </Link>
           <Link 
             to="/register"
             className="bg-brand-purple text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-purple/90 transition-all shadow-md hover:shadow-lg active:scale-95"
           >
-            Get Started
+            Mulai Sekarang
           </Link>
         </div>
 
@@ -104,14 +104,14 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-between text-lg font-medium text-gray-700"
               >
-                Login <ChevronRight size={20} />
+                Masuk <ChevronRight size={20} />
               </Link>
               <Link 
                 to="/register"
                 onClick={() => setIsOpen(false)}
                 className="bg-brand-purple text-white px-6 py-3 rounded-xl text-center font-bold"
               >
-                Get Started
+                Mulai Sekarang
               </Link>
             </div>
           </motion.div>

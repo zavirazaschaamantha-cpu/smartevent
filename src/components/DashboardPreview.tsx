@@ -12,18 +12,18 @@ export default function DashboardPreview() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-sm font-bold text-brand-orange uppercase tracking-widest mb-3">Powerful Insights</h2>
+              <h2 className="text-sm font-bold text-brand-orange uppercase tracking-widest mb-3">Wawasan Mendalam</h2>
               <h3 className="text-4xl md:text-5xl font-display font-extrabold text-gray-900 mb-8 leading-tight">
-                Designed for <br />
-                <span className="text-brand-purple">Unmatched</span> Visibility
+                Didesain untuk <br />
+                Visibilitas <span className="text-brand-purple">Tanpa Batas</span>
               </h3>
               
               <div className="space-y-6">
                 {[
-                  'Real-time participant growth tracking',
-                  'Automated attendance analytics',
-                  'Revenue and ticket sales breakdown',
-                  'Activity logs and staff management'
+                  'Pelacakan pertumbuhan peserta waktu nyata',
+                  'Analitik kehadiran otomatis',
+                  'Rincian pendapatan dan penjualan tiket',
+                  'Log aktivitas dan manajemen staf'
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4">
                     <div className="mt-1 bg-green-100 text-green-600 p-1 rounded-full">
@@ -47,8 +47,8 @@ export default function DashboardPreview() {
                   ))}
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-gray-900">Used by 500+ organizers</div>
-                  <div className="text-xs text-gray-500 font-medium">Join the elite campus communities</div>
+                  <div className="text-sm font-bold text-gray-900">Digunakan oleh 500+ panitia</div>
+                  <div className="text-xs text-gray-500 font-medium">Bergabunglah dengan komunitas kampus elit</div>
                 </div>
               </div>
             </motion.div>
@@ -66,9 +66,9 @@ export default function DashboardPreview() {
                 {/* Stats Mockup Inspired by Design HTML */}
                 <div className="p-6 grid grid-cols-2 lg:grid-cols-3 gap-4 border-b border-gray-50">
                   {[
-                    { label: 'Registrations', value: '842', color: 'text-brand-purple' },
-                    { label: 'Attendance', value: '94%', color: 'text-brand-orange' },
-                    { label: 'Capacity', value: '1.2k', color: 'text-gray-900' }
+                    { label: 'Registrasi', value: '842', color: 'text-brand-purple' },
+                    { label: 'Kehadiran', value: '94%', color: 'text-brand-orange' },
+                    { label: 'Kapasitas', value: '1.2k', color: 'text-gray-900' }
                   ].map((stat, i) => (
                     <div key={i} className="bg-white p-4 rounded-xl border border-gray-50 shadow-sm">
                       <p className="text-[10px] uppercase font-bold text-gray-400">{stat.label}</p>
@@ -99,8 +99,8 @@ export default function DashboardPreview() {
                    <CheckCircle2 size={24} />
                 </div>
                 <div className="text-left">
-                  <p className="text-sm font-bold">Success!</p>
-                  <p className="text-xs opacity-80">Registration confirmed</p>
+                  <p className="text-sm font-bold">Berhasil!</p>
+                  <p className="text-xs opacity-80">Registrasi dikonfirmasi</p>
                 </div>
               </motion.div>
             </motion.div>
